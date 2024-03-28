@@ -7,3 +7,9 @@ export const cherry = new Palette({
     "maroon2": { r: 131, g: 0, b: 34 },
     "cherry": { r: 140, g: 1, b: 31 },
 })
+
+export const darkCherry = new Palette({
+    "brick": { r: 181, g: 7, b: 56 },
+    "maroon": { r: 108, g: 0, b: 0 },
+    "cherry": { r: 140, g: 1, b: 31 },
+})
