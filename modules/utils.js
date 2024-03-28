@@ -3,11 +3,29 @@ export class Point {
         this.x = x;
         this.y = y;
     }
+    /**
+     * Randomly translate point a maximum of n units in any direction
+     * @param {*} n maximum distance point can be moved 
+     */
+    perturb(n=1){
+        this.x += n*(Math.random() - (1/2));
+        this.y += n*(Math.random() - (1/2));
+        return this
+    }
+
+    /**
+     * Translate the point x units horizontally and y units vertically
+     * @param {number} x horizontal units
+     * @param {number} y vertical units
+     */
+    translate(x, y){
+        self.x += x
+        self.y += y
+        return this
+    }
+
 };
 
-/**
- * 
- */
 export class Palette {
     constructor(dict) {
         for (let key in dict) {
