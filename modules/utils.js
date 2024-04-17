@@ -30,7 +30,7 @@ export class Palette {
     constructor(dict) {
         for (let key in dict) {
             let c = dict[key];
-            this[key] = { r: c.r, g: c.g, b: c.b }
+            this[key] = {r:c[0], g:c[1], b:c[2]};
         }
     }
 

@@ -1,16 +1,16 @@
 import { Palette } from "./utils.js";
 
 export const cherry = new Palette({
-    "pink": { r: 238, g: 26, b: 66 },
-    "brick": { r: 181, g: 7, b: 56 },
-    "maroon": { r: 108, g: 0, b: 0 },
-    "maroon2": { r: 131, g: 0, b: 34 },
-    "cherry": { r: 140, g: 1, b: 31 },
-    "darkbrick": { r: 60, g: 0, b: 0 }
+    "pink": [238, 26, 66], 
+    "brick": [181, 7, 56], 
+    "maroon": [108, 0, 0], 
+    "maroon2": [131, 0, 44],
+    "cherry": [140, 1, 31],
+    "darkbrick": [60, 0, 0]
 })
 
 export const darkCherry = new Palette({
-    "brick": { r: 181, g: 7, b: 56 },
-    "maroon": { r: 108, g: 0, b: 0 },
-    "cherry": { r: 140, g: 1, b: 31 },
+    "brick": [181, 7, 56], 
+    "maroon": [108, 0, 0], 
+    "cherry": [140, 1, 31],
 })
