@@ -5,9 +5,9 @@ import { Point } from "./utils.js";
  * @param {Point} a point of the tip of the triangle 
  * @param {Point} b midpoint of the base of the triangle
  * @param {number} angle angle of the tip of the triangle.
- * @returns {Point[]} vertices of the triangle [Point, Point, Point]
+ * @returns {Point[]} vertices of the triangle [tip, right_base, left_base]
  */
-export function free_isosceles_triangle(a, b, angle) {
+export function isoscelesTriangle(a, b, angle) {
     let d = Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
 
     let base = d * Math.tan(angle);
@@ -34,7 +34,7 @@ export function free_isosceles_triangle(a, b, angle) {
  * @param {number} n number of points to plot
  * @return {Point[]} returns array of points on the input circle's circumference. 
  */
-export function point_ring(c, r, n) {
+export function pointRing(c, r, n) {
     let points = [];
     for (let i = 0; i < n; i++) {
         let p = new Point()
